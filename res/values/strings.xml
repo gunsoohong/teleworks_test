@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ETRI Coffee VM</string>
+    <string name="action_settings">Settings</string>
+    <string name="map_name">Vending Machine Location</string>
+ 	<string name="project_name">Open Semantic USN Service</string>
+ 	
+    <!-- BluetoothChat -->
+    <string name="send">Send</string>
+    <string name="not_connected">failed to connect.</string>
+    <string name="bt_not_enabled_leaving">Bluetooth is out of working. leaving app.</string>
+    <string name="title_connecting">connecting to Vending Machine.</string>
+    <string name="connecting_to">connecting to Vending Machine. wait a second.</string>
+    <string name="title_connected_to">connected to : </string>
+    <string name="title_not_connected">not connected</string>
+    <string name="bluetooth_key">BLUETOOTH Key : "0000"</string>
+    <string name="no_device">Bluetooth is out of working.</string>
+    <string name="turning_on">turnning on Bluetooth. wait a second.</string>
+
+    <!-- DeviceListActivity -->
+    <string name="scanning">Searching Machine.</string>
+    <string name="select_device">Select device</string>
+    <string name="none_paired">none paired</string>
+    <string name="none_found">none found</string>
+    <string name="title_paired_devices">paired devices</string>
+    <string name="title_other_devices">other devices</string>
+    <string name="button_scan">Serch Machine</string>
+    <string name="button_scan_again">Serch Again</string>
+
+    <!-- Options Menu -->
+    <string name="connect">Connect Machine</string>
+    <string name="discoverable">discoverable</string>
+
+    <!-- App Strings -->
+    <string name="result_cancel">out of working.</string>
+    <string name="have_coin">Have :</string>
+    <string name="no_booked_up_coffee">Not Reservation.</string>
+    <string name="book_up_coffee">Booked.</string>
+    <string name="no_coin">not enough Coin.</string>
+
+    <!-- App Beam -->
+    <string name="menu_settings">Android Beam settings</string>
+    <string name="info">if it is correct, then please scan the NFC.</string>
+    <string name="worry"> * Note * \ nNFC is not turned on at the time, press the top of the Settings window Please activate the NFC.</string>
+    <string name="cancel_scan">cancel_scan</string>
+    <string name="vm_name">Machine ID : </string>
+    <string name="vm_which_coffee">Choose Coffee : </string>
+    <string name="vm_taste">Taste : Coffee [0], Cream [0], Sugar [0]</string>
+    <string name="result_making_coffee">Ordered coffee is generating.\n\nPlease take the cup \n\nafter finishing the generation.</string>
+
+</resources>

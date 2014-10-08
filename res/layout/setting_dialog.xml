@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="330dip"
+    android:background="@drawable/list_bg"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="270dip"
+        android:layout_height="230dip"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="0dip"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/calorie_bg"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="90dip"
+                android:layout_height="15dip"
+                android:layout_marginLeft="5dip"
+                android:layout_marginTop="15dip"
+                android:background="@drawable/title_user" >
+            </ImageView>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:layout_marginTop="20dip"
+                android:gravity="center|left"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="0dip"
+                    android:text="Height     "
+                    android:textColor="#222222" >
+                </TextView>
+
+                <EditText
+                    android:id="@+id/edit_height"
+                    android:layout_width="100dip"
+                    android:layout_height="wrap_content"
+                    android:inputType="number" >
+                </EditText>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:text=" cm"
+                    android:textColor="#222222" >
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:gravity="center|left"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="0dip"
+                    android:text="Activity "
+                    android:textColor="#222222" >
+                </TextView>
+
+                <RadioGroup
+                    android:id="@+id/radioLevel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/radio_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1  "
+                        android:textColor="#222222" >
+                    </RadioButton>
+
+                    <RadioButton
+                        android:id="@+id/radio_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2  "
+                        android:textColor="#222222" >
+                    </RadioButton>
+
+                    <RadioButton
+                        android:id="@+id/radio_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="3  "
+                        android:textColor="#222222" >
+                    </RadioButton>
+
+                    <RadioButton
+                        android:id="@+id/radio_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4  "
+                        android:textColor="#222222" >
+                    </RadioButton>
+                </RadioGroup>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:text="Activity - One day is a lot of activity, the higher the number."
+                android:textColor="#1e3da0" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dip"
+        android:layout_marginTop="10dip"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btnOk"
+            android:layout_width="120dip"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dip"
+            android:text="OK" >
+        </Button>
+
+        <Button
+            android:id="@+id/btnCancle"
+            android:layout_width="120dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:text="Cancel" >
+        </Button>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/list_bg"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/txt_new_devices"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0dip"
+        android:layout_marginTop="10dip"
+        android:background="#3c2014"
+        android:paddingLeft="5dp"
+        android:text="Vending Machine List"
+        android:textColor="#fff"
+        android:textSize="15dip" />
+
+    <TextView
+        android:id="@+id/txt_new_devices"
+        android:layout_width="350dip"
+        android:layout_height="40dip"
+        android:layout_marginBottom="0dip"
+        android:layout_marginTop="10dip"
+        android:background="#e1ddd5"
+        android:gravity="center"
+        android:text="   VM-ID      |   Dleanness    |     Connection "
+        android:textColor="#000000"
+        android:textSize="17sp" />
+
+    <ListView
+        android:id="@+id/list_new_devices"
+        android:layout_width="350dip"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dip"
+        android:layout_weight="0" />
+
+    <Button
+        android:id="@+id/button_scan"
+        android:layout_width="350dip"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dip"
+        android:text="Searching.." />
+
+</LinearLayout>

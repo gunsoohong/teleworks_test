@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/displayresult"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/list_bg"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/machine_cleanning"
+                android:layout_width="90dip"
+                android:layout_height="90dip"
+                android:layout_marginRight="0dip"
+                android:layout_marginTop="0dip"
+                android:background="@drawable/machine_mini" >
+            </Button>
+
+            <LinearLayout
+                android:layout_width="200dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dip"
+                android:layout_marginTop="0dip"
+                android:gravity="center|center_horizontal"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/text_displayResultw"
+                    android:layout_width="200dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dip"
+                    android:text="Cleanness   : clean\nLast Clean: 0day 2hours ago\nAvg/Week: 5 times\nDust Level: 0 (0~9)"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14dip" />
+
+                <LinearLayout
+                    android:layout_width="184dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dip"
+                    android:gravity="center|center_horizontal"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/icon_cup"
+                        android:layout_width="22dip"
+                        android:layout_height="22dip"
+                        android:src="@drawable/cup_y" >
+                    </ImageView>
+
+                    <TextView
+                        android:id="@+id/txt_cup"
+                        android:layout_width="70dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dip"
+                        android:text="Cup OK"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14dip" />
+
+                    <ImageView
+                        android:id="@+id/icon_water"
+                        android:layout_width="22dip"
+                        android:layout_height="22dip"
+                        android:src="@drawable/water_y" >
+                    </ImageView>
+
+                    <TextView
+                        android:id="@+id/txt_water"
+                        android:layout_width="70dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dip"
+                        android:text="Water OK"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14dip" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layer_menu1"
+            android:layout_width="fill_parent"
+            android:layout_height="160dip"
+            android:layout_marginTop="20dip"
+            android:background="@drawable/menu_bg"
+            android:gravity="center|center_horizontal"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/Btn_coffee_milk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="17dip"
+                android:background="@drawable/coffee_milk_on" >
+            </Button>
+
+            <Button
+                android:id="@+id/Btn_coffee_cream"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dip"
+                android:layout_marginRight="5dip"
+                android:layout_marginTop="17dip"
+                android:background="@drawable/coffee_cream_on" >
+            </Button>
+
+            <Button
+                android:id="@+id/Btn_coffee_sugar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dip"
+                android:layout_marginLeft="5dip"
+                android:layout_marginTop="17dip"
+                android:background="@drawable/coffee_sugar_on" >
+            </Button>
+
+            <Button
+                android:id="@+id/Btn_coffee_black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dip"
+                android:layout_marginLeft="10dip"
+                android:layout_marginTop="17dip"
+                android:background="@drawable/coffee_black_on" >
+            </Button>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#3c2014"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/text_cost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dip"
+                android:text="Price : -- won"
+                android:textColor="#FFFFFF"
+                android:textSize="15dip" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="/"
+                android:textColor="#fffe89"
+                android:textSize="15dip" />
+
+            <TextView
+                android:id="@+id/text_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:text="Have : -- won"
+                android:textColor="#fffe89"
+                android:textSize="15dip" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/layer_coffee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dip"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dip"
+                    android:text="coffee"
+                    android:textColor="#FFFFFF"
+                    android:textSize="13dip" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:background="@drawable/control_bg_2"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <Button
+                        android:id="@+id/Btn_minus1"
+                        android:layout_width="50dip"
+                        android:layout_height="50dip"
+                        android:layout_marginRight="10dip"
+                        android:background="@drawable/minus" >
+                    </Button>
+
+                    <TextView
+                        android:id="@+id/txt_taste_coffee"
+                        android:layout_width="45dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="0dip"
+                        android:gravity="center"
+                        android:text="3"
+                        android:textColor="#FFFFFF"
+                        android:textSize="13dip" />
+
+                    <Button
+                        android:id="@+id/Btn_plus1"
+                        android:layout_width="50dip"
+                        android:layout_height="50dip"
+                        android:layout_marginLeft="10dip"
+                        android:background="@drawable/plus" >
+                    </Button>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layer_sugar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dip"
+                    android:text="sugar"
+                    android:textColor="#FFFFFF"
+                    android:textSize="13dip" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:background="@drawable/control_bg_2"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <Button
+                        android:id="@+id/Btn_minus3"
+                        android:layout_width="50dip"
+                        android:layout_height="50dip"
+                        android:layout_marginRight="10dip"
+                        android:background="@drawable/minus" >
+                    </Button>
+
+                    <TextView
+                        android:id="@+id/txt_taste_sugar"
+                        android:layout_width="45dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="0dip"
+                        android:gravity="center"
+                        android:text="3"
+                        android:textColor="#FFFFFF"
+                        android:textSize="13dip" />
+
+                    <Button
+                        android:id="@+id/Btn_plus3"
+                        android:layout_width="50dip"
+                        android:layout_height="50dip"
+                        android:layout_marginLeft="10dip"
+                        android:background="@drawable/plus" >
+                    </Button>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layer_cream"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dip"
+                    android:text="cream"
+                    android:textColor="#FFFFFF"
+                    android:textSize="13dip" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:background="@drawable/control_bg_2"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <Button
+                        android:id="@+id/Btn_minus2"
+                        android:layout_width="50dip"
+                        android:layout_height="50dip"
+                        android:layout_marginRight="10dip"
+                        android:background="@drawable/minus" >
+                    </Button>
+
+                    <TextView
+                        android:id="@+id/txt_taste_cream"
+                        android:layout_width="45dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="0dip"
+                        android:gravity="center"
+                        android:text="3"
+                        android:textColor="#FFFFFF"
+                        android:textSize="13dip" />
+
+                    <Button
+                        android:id="@+id/Btn_plus2"
+                        android:layout_width="50dip"
+                        android:layout_height="50dip"
+                        android:layout_marginLeft="10dip"
+                        android:background="@drawable/plus" >
+                    </Button>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="100dip"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dip"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/Btn_taste_coffee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dip"
+                android:background="@drawable/btn_save"
+                android:text="" />
+
+            <Button
+                android:id="@+id/Btn_taste_cho"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dip"
+                android:background="@drawable/btn_select"
+                android:text="" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

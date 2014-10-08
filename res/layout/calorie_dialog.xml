@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/list_bg"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="270dip"
+        android:layout_height="370dip"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/calorie_bg"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="250dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="10dip"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="90dip"
+                android:layout_height="15dip"
+                android:layout_marginTop="15dip"
+                android:background="@drawable/title_calorie" >
+            </ImageView>
+
+            <TextView
+                android:id="@+id/text_calorie_aday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:text="Recommended Intake : "
+                android:textColor="#222222"
+                android:textSize="15dip" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/text_calorie"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:text="Today Intake : "
+                android:textColor="#222222"
+                android:textSize="15dip" >
+            </TextView>
+
+            <ImageView
+                android:layout_width="225dip"
+                android:layout_height="2dip"
+                android:layout_marginTop="15dip"
+                android:background="@drawable/bar_calorie" >
+            </ImageView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="250dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="10dip"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="90dip"
+                android:layout_height="15dip"
+                android:layout_marginTop="15dip"
+                android:background="@drawable/title_sugar" >
+            </ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:text="Recommended Intake : 50 g"
+                android:textColor="#222222"
+                android:textSize="15dip" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/text_sugar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:text="Today Intake : "
+                android:textColor="#222222"
+                android:textSize="15dip" >
+            </TextView>
+
+            <ImageView
+                android:layout_width="225dip"
+                android:layout_height="2dip"
+                android:layout_marginTop="15dip"
+                android:background="@drawable/bar_calorie" >
+            </ImageView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="250dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="10dip"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="90dip"
+                android:layout_height="15dip"
+                android:layout_marginTop="15dip"
+                android:background="@drawable/title_caffeine" >
+            </ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:text="Recommended Intake : 400 mg"
+                android:textColor="#222222"
+                android:textSize="15dip" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/text_caffeine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:text="Today Intake : "
+                android:textColor="#222222"
+                android:textSize="15dip" >
+            </TextView>
+
+            <ImageView
+                android:layout_width="225dip"
+                android:layout_height="2dip"
+                android:layout_marginTop="15dip"
+                android:background="@drawable/bar_calorie" >
+            </ImageView>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="5dip"
+            android:text=""
+            android:textColor="#173b0a"
+            android:textSize="14dip" >
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dip"
+        android:layout_marginTop="10dip"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_user_setting"
+            android:layout_width="100dip"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dip"
+            android:background="@android:drawable/btn_default"
+            android:text="Setting" />
+
+        <Button
+            android:id="@+id/btnOk"
+            android:layout_width="100dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:background="@android:drawable/btn_default"
+            android:text="Cancel" />
+    </LinearLayout>
+
+</LinearLayout>
